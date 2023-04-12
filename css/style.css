@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* estilos de pantallas de celulares */
 a,
 a:active {
     text-decoration: none;
@@ -26,7 +26,7 @@ a:active {
 }
 
 .df-menu{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     list-style: none;
@@ -96,7 +96,7 @@ a:active {
     object-fit: cover;
 }
 
-/* estilos para nustros productos */
+/* estilos para nuestros productos */
 .nuestrosProductos {
     display: flex;
 }
@@ -113,9 +113,28 @@ a:active {
     font-size: 40px;
 }
 
-.fachada {
-    text-align: center;
+/* estilos para sobre nosotros */
+
+.nosotros-detalle{
+    display: none;
 }
+
+.fachada {
+    display: none;
+}
+
+.video-celular {
+    display: flex;
+}
+
+.video-celular iframe{
+    width: 100%;
+
+    object-fit: cover;
+    padding: 10px;
+}
+
+
 
 /*estilo para footer */
 
@@ -138,3 +157,44 @@ footer {
     bottom: 0;
     right: 10px;
 }
+
+
+/* mq de escritorio */
+
+@media screen and (min-width:1024px){
+
+    .dropdown{
+        display: none;
+    }
+
+    .df-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: rgb(253, 253, 253);
+    gap: 15px;
+    font-family: 'Chivo Mono', monospace;
+
+}
+
+/* estilos para sobre nosotros */
+
+.fachada {
+    display: flex;
+}
+
+.fachada img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.video-celular{
+    display: none;
+}
+
+}
+
+

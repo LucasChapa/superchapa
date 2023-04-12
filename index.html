@@ -14,8 +14,10 @@
 
     <!-- link de mi fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Lobster&family=Roboto+Mono:wght@100;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Lobster&family=Roboto+Mono:wght@100;700&display=swap"
+        rel="stylesheet">
     <title> Super Chapa </title>
 </head>
 
@@ -23,6 +25,20 @@
     <header class="df-header menu-fijo">
         <div>
             <img class="logo-superchapa" src="./img/logo-inicial.png" alt="logo de super chapa">
+        </div>
+
+        <!-- menu para celular -->
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="./pages/sobrenosotros.html"> Sobre nosotros </a></li>
+                <li><a class="dropdown-item" href="./pages/nuestrosproductos.html"> Nuestrosproductos</a></li>
+                <li><a class="dropdown-item" href="./pages/panaderiaaya.html"> Panaderia AYA</a></li>
+                <li><a class="dropdown-item" href="./pages/contacto.html">Contacto</a></li>
+            </ul>
         </div>
 
         <!-- menu del sitio le asignamos etiqueta "df-menu" -->
@@ -48,7 +64,7 @@
     <main class="main-home">
         <!-- imagen del html principal -->
         <div class="logo-3d">
-            <img  src="img/logo.jpg" alt="Logo de Super Chapa">
+            <img src="img/logo.jpg" alt="Logo de Super Chapa">
         </div>
 
     </main>
@@ -65,7 +81,9 @@
     </footer>
 
     <!-- script bt -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
