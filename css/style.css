@@ -32,6 +32,8 @@ a:active {
     list-style: none;
     color: rgb(253, 253, 253);
     gap: 15px;
+        font-family: 'Chivo Mono', monospace;
+
 }
 
 .dfMenu li{
@@ -52,9 +54,7 @@ a:active {
 }
 
 /* estilo para home */
-.main-home{
-    height: 70vh;
-}
+
 .logo-3d{
     display: flex;   
 }
