@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* estilos de pantallas de celulares */
 a,
 a:active {
@@ -21,27 +22,27 @@ a:active {
 }
 
 
-.logo-superchapa{
+.logo-superchapa {
     height: 75px;
 }
 
 
-.df-menu{
+.df-menu {
     display: none;
     align-items: center;
     justify-content: center;
     list-style: none;
     color: rgb(253, 253, 253);
     gap: 15px;
-        font-family: 'Chivo Mono', monospace;
+    font-family: 'Chivo Mono', monospace;
 
 }
 
-.dfMenu li{
+.dfMenu li {
     margin: 10px;
 }
 
-.menu-fijo{
+.menu-fijo {
     position: sticky;
     top: 0;
     z-index: 2;
@@ -56,11 +57,11 @@ a:active {
 
 /* estilo para home */
 
-.logo-3d{
-    display: flex;   
+.logo-3d {
+    display: flex;
 }
 
-.logo-3d img{
+.logo-3d img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -83,28 +84,23 @@ a:active {
 
 /* estilos para panaderia AYA */
 /* uso de grid */
-.panaderia-padre{
-    display: grid;
+.panaderia-padre {
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
 }
 
-.panaderia-padre img{
+.panaderia-padre img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* estilos para nuestros productos */
-.nuestrosProductos {
-    display: flex;
-}
-
 .contactoAya {
     text-align: center;
-    background-color: aquamarine;
+    background-color: rgb(61, 167, 185);
     font-size: 25px;
 }
 
@@ -114,9 +110,42 @@ a:active {
     font-size: 40px;
 }
 
+/* estilos para nuestros productos */
+.rubros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.rubros img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-pc {
+    display: none;
+    justify-content: center;
+}
+
+.marcas-propias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.marcas-propias img {
+    width: 100%;
+    object-fit: cover;
+}
+
 /* estilos para sobre nosotros */
 
-.nosotros-detalle{
+.nosotros-detalle {
     display: none;
 }
 
@@ -128,7 +157,7 @@ a:active {
     display: flex;
 }
 
-.video-celular iframe{
+.video-celular iframe {
     width: 100%;
 
     object-fit: cover;
@@ -143,7 +172,6 @@ footer {
     background-image: url(../img/olas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-
     font-size: 30px;
     padding: 50px;
 }
@@ -162,44 +190,90 @@ footer {
 
 /* mq de escritorio */
 
-@media screen and (min-width:1024px){
+@media screen and (min-width:1024px) {
 
-    .menu-celular{
+    .menu-celular {
         display: none;
     }
 
-    .df-menu{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    color: rgb(253, 253, 253);
-    gap: 15px;
-    font-family: 'Chivo Mono', monospace;
+    .df-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        color: rgb(253, 253, 253);
+        gap: 15px;
+        font-family: 'Chivo Mono', monospace;
+    }
 
+
+    /* estilos para sobre nosotros */
+
+    .fachada {
+        display: flex;
+    }
+
+    .fachada img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        padding: 10px;
+    }
+
+    .video-celular {
+        display: none;
+    }
+
+    .nosotros-detalle {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* estilos para pc de panaderia */
+    .panaderia-padre {
+        display: grid;
+    }
+
+    .carrusel-panaderia {
+        display: none;
+    }
+
+    /* estilos para nuestros productos */
+    .video-pc {
+        display: flex;
+        justify-content: center;
+    }
+    .rubros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .rubros img {
+        height: 130px;
+        object-fit: cover;
+    }
+    
+    .marcas-propias {
+        display: flex;
+
+    }
+
+    .marcas-propias img{
+        height: fit-content;
+        width: 150px;
+        margin-left: 250px;
+    }
+
+    /*estilo para footer */
+
+    .whatsapp {
+        position: fixed;
+        bottom: 0;
+        right: 10px;
+    }
+    
 }
-
-/* estilos para sobre nosotros */
-
-.fachada {
-    display: flex;
-}
-
-.fachada img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    padding: 10px;
-}
-
-.video-celular{
-    display: none;
-}
-
-.nosotros-detalle{
-    display: flex;
-    flex-direction: column;
-}
-}
-
-
