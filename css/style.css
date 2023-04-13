@@ -25,6 +25,7 @@ a:active {
     height: 75px;
 }
 
+
 .df-menu{
     display: none;
     align-items: center;
@@ -163,7 +164,7 @@ footer {
 
 @media screen and (min-width:1024px){
 
-    .dropdown{
+    .menu-celular{
         display: none;
     }
 
