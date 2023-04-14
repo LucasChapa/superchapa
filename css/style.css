@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(189, 231, 241);
+}
+
 /* estilos de pantallas de celulares */
 a,
 a:active {
@@ -34,8 +38,14 @@ a:active {
     list-style: none;
     color: rgb(253, 253, 253);
     gap: 15px;
-    font-family: 'Chivo Mono', monospace;
+}
 
+.fonts-uno{
+    font-family: 'Chivo Mono', monospace;
+}
+
+.fonts-dos{
+    font-family: 'Dongle', sans-serif;
 }
 
 .dfMenu li {
@@ -76,7 +86,7 @@ a:active {
     margin-bottom: 20px;
 }
 
-.sobreNosotros {
+.sobre-nosotros {
     font-size: 20px;
     margin: 20px 150px;
 
@@ -98,7 +108,7 @@ a:active {
     object-fit: cover;
 }
 
-.contactoAya {
+.contacto-aya {
     text-align: center;
     background-color: rgb(61, 167, 185);
     font-size: 25px;

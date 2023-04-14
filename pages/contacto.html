@@ -13,18 +13,25 @@
     <!-- link de mi css -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <!-- link de mi fonts -->
+    <!-- link de mi fonts fonts-uno -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Lobster&family=Roboto+Mono:wght@100;700&display=swap"
         rel="stylesheet">
 
+    <!-- link de mi fonts fonts-dos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&family=Dongle:wght@700&family=Lobster&family=Roboto+Mono:wght@100;700&display=swap"
+        rel="stylesheet">
+
     <title>Document</title>
 </head>
 
 <body>
-    <header class="df-header menu-fijo">
+    <header class="df-header menu-fijo fonts-uno">
         <div>
             <img class="logo-superchapa" src="../img/logo-inicial.png" alt="logo de super chapa">
         </div>
@@ -64,13 +71,11 @@
     </header>
 
     <main>
-        <h1 class="subtitulo"> Contacto </h1>
+        <h1 class="subtitulo fonts-dos"> Contacto </h1>
         <h2 class="detalle"> Dejanos tu comentario </h2>
         <div class="contacto">
             <form action="">
                 <fieldset>
-
-
                     <div>
                         <label for="nombre"> Nombre </label>
                         <input type="text" name="nombre" id="nombre">
@@ -97,28 +102,28 @@
                     </div>
 
                     <div>
-                        <input type="submit">
-                        <input type="reset">
+                        <input class="fonts-dos" type="submit">
+                        <input class="fonts-dos" type="reset">
                     </div>
-
-
                 </fieldset>
-
-
             </form>
         </div>
-
     </main>
 
     <footer>
-        <h4> Seguinos en instagram @superchapasa </h4>
+        <div>
+            <a href="https://www.instagram.com/superchapasa/" target="_blank">
+                <img src="../img/logo-instagram.png" alt=" ir a instagram">
+            </a>
+        </div>
         <h4> Whatsapp +54 9 (223)5134228 </h4>
-        <h2> Mar del Plata, Argentina </h2>
+        <h4> Calle 0 entre 697 y 699, Playa Chapadmalal</h4>
+        <h2 class="grande"> Mar del Plata, Argentina </h2>
 
+        <!-- logo de Whatsapp para dirigirnos a chat-->
         <div class="whatsapp">
             <img src="../img/whatsapp.jpeg" alt=" Dirigite a Whatsapp">
         </div>
-
     </footer>
 
     <!-- script bt -->
