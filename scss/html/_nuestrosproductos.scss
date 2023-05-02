@@ -1,0 +1,75 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+// estilos de pantallas de celulares
+/* estilos para nuestros productos */
+.rubros {
+    margin-bottom: 10px;
+
+    .box {
+    display: flex;
+    width: 550px;
+    height: 150px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgb(33, 33, 143), rgb(230, 132, 5));
+    color: white;
+    font-size: 50px;
+    }
+    .box:hover {
+        transform: translate(20px, 20px);
+        background: rgb(66, 179, 199);
+    }
+}
+
+.video-pc {
+    display: none;
+    justify-content: center;
+}
+
+.marcas-propias {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// mq de escritorio 
+@media screen and (min-width: 1024px) {
+    .video-pc {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rubros {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+
+        img {
+            height: 130px;
+            object-fit: cover;
+        }
+    }
+
+    .marcas-propias {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10px;
+
+        img {
+            height: fit-content;
+            width: 150px;
+        }
+    }
+}

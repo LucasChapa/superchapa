@@ -1,0 +1,23 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+// estilos de pantallas de celulares
+/* estilo para home */
+.logo-3d {
+    display: flex;
+    img {
+        @include imagen;
+        padding: 10px;
+    }
+}
+
+.detalle {
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+// mq de escritorio 
+

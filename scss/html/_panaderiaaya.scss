@@ -1,0 +1,42 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+// estilos de pantallas de celulares
+/* estilos para panaderia AYA */
+/* uso de grid */
+.panaderia-padre {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    img {
+        @include imagen;
+    }
+}
+
+.contacto-aya {
+    text-align: center;
+    background-color: rgb(61, 167, 185);
+    font-size: 25px;
+}
+
+.contacto {
+    text-align: center;
+    background-color: rgb(0, 162, 255);
+    font-size: 40px;
+}
+
+// mq de escritorio 
+@media screen and (min-width: 1024px) {
+
+    /* estilos para pc de panaderia */
+    .panaderia-padre {
+        display: grid;
+    }
+
+    .carrusel-panaderia {
+        display: none;
+    }
+}

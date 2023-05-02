@@ -1,0 +1,118 @@
+@import "../utilidades/variables";
+@import "../utilidades/extend";
+
+body{
+    background-color: $color-body;
+}
+
+/* estilos de pantallas de celulares */
+a,
+a:active {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+
+/* estilo para header */
+
+.df-header {
+    @extend %fondo;
+    background-color: $color-header;
+}
+
+
+.logo-superchapa {
+    height: 75px;
+}
+
+
+.df-menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: rgb(253, 253, 253);
+    gap: 15px;
+    li {
+        margin: 10px;
+    }
+}
+
+.fonts-uno{
+    font-family: 'Chivo Mono', monospace;
+}
+
+.fonts-dos{
+    font-family: 'Dongle', sans-serif;
+}
+
+.menu-fijo {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* estilo para main */
+.subtitulo {
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/*estilo para footer */
+
+footer {
+    background-image: url(../img/olas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 30px;
+    padding: 50px;
+}
+
+
+.grande {
+    font-size: 20px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+
+/* mq de escritorio */
+
+@media screen and (min-width:1024px) {
+
+    .menu-celular {
+        display: none;
+    }
+
+    .df-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        color: rgb(253, 253, 253);
+        gap: 35px;
+        font-family: 'Chivo Mono', monospace;
+    }
+
+    /*estilo para footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    color: rgb(253, 253, 253);
+    gap: 35px;
+    font-size: 30px;
+    padding: 15px;
+    margin-right: 100px;
+    background-color: $color-header;
+    background-image: none;
+
+}
+
+}

@@ -1,0 +1,43 @@
+@import "../utilidades/variables";
+@import "../utilidades/mixin";
+
+// estilos de pantallas de celulares
+/* estilos para sobre nosotros */
+
+.nosotros-detalle {
+    display: none;
+}
+
+.fachada {
+    display: none;
+}
+
+.video-celular {
+    display: flex;
+    iframe {
+    width: 100%;
+
+    object-fit: cover;
+    padding: 10px;
+}
+}
+
+// mq de escritorio 
+@media screen and (min-width: 1024px) {
+    .fachada {
+    display: flex;
+    img {
+    @include imagen;
+    padding: 10px;
+}
+}
+
+.video-celular {
+    display: none;
+}
+
+.nosotros-detalle {
+    display: flex;
+    flex-direction: column;
+}
+}
