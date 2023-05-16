@@ -14,30 +14,35 @@
 
 .video-celular {
     display: flex;
-    iframe {
-    width: 100%;
 
-    object-fit: cover;
-    padding: 10px;
-}
+    iframe {
+        width: 100%;
+
+        object-fit: cover;
+        padding: 10px;
+    }
 }
 
 // mq de escritorio 
 @media screen and (min-width: 1024px) {
     .fachada {
-    display: flex;
-    img {
-    @include imagen;
-    padding: 10px;
-}
-}
+        display: flex;
 
-.video-celular {
-    display: none;
-}
+        img {
+            @include imagen;
+            padding: 10px;
+        }
+    }
 
-.nosotros-detalle {
-    display: flex;
-    flex-direction: column;
-}
+    .video-celular {
+        display: none;
+    }
+
+    .nosotros-detalle {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px 50px 100px;
+        font-weight: bolder;
+        font-size: 20px;
+    }
 }

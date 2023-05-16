@@ -66,6 +66,8 @@ footer {
   position: fixed;
   bottom: 0;
   right: 10px; }
+  .whatsapp img {
+    width: 50px; }
 
 /* mq de escritorio */
 @media screen and (min-width: 1024px) {
@@ -89,7 +91,6 @@ footer {
     gap: 35px;
     font-size: 30px;
     padding: 15px;
-    margin-right: 100px;
     background-color: #0a0a99;
     background-image: none; } }
 
@@ -103,8 +104,8 @@ footer {
     padding: 10px; }
 
 .detalle {
-  background-color: black;
-  color: aliceblue;
+  background-color: #000000;
+  color: #f0f8ff;
   font-size: 20px;
   text-align: center;
   margin-bottom: 20px; }
@@ -135,7 +136,10 @@ footer {
     display: none; }
   .nosotros-detalle {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    padding: 50px 100px 50px 100px;
+    font-weight: bolder;
+    font-size: 20px; } }
 
 /* estilos para panaderia AYA */
 /* uso de grid */
@@ -155,11 +159,6 @@ footer {
   background-color: #3da7b9;
   font-size: 25px; }
 
-.contacto {
-  text-align: center;
-  background-color: #00a2ff;
-  font-size: 40px; }
-
 @media screen and (min-width: 1024px) {
   /* estilos para pc de panaderia */
   .panaderia-padre {
@@ -168,25 +167,21 @@ footer {
     display: none; } }
 
 /* estilos para nuestros productos */
-.rubros {
-  margin-bottom: 10px; }
-  .rubros .box {
-    display: flex;
-    width: 550px;
-    height: 150px;
-    border: 1px solid black;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(#21218f, #e68405);
-    color: white;
-    font-size: 50px; }
-  .rubros .box:hover {
-    transform: translate(20px, 20px);
-    background: #42b3c7; }
-
 .video-pc {
   display: none;
   justify-content: center; }
+
+.sectores {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center; }
+  .sectores img {
+    width: 50%; }
+
+.rubros {
+  display: none; }
 
 .marcas-propias {
   display: grid;
@@ -202,6 +197,23 @@ footer {
   .video-pc {
     display: flex;
     justify-content: center; }
+  .sectores {
+    display: none; }
+  .rubros {
+    margin-bottom: 10px; }
+    .rubros .box {
+      display: flex;
+      width: 30vw;
+      height: 150px;
+      border: 1px solid #000000;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(#21218f, #e68405);
+      color: #ffffff;
+      font-size: 50px; }
+    .rubros .box:hover {
+      transform: translate(20px, 20px);
+      background: #42b3c7; }
   .rubros {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -219,3 +231,40 @@ footer {
     .marcas-propias img {
       height: fit-content;
       width: 150px; } }
+
+.df-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+/* estilos de pantallas de celulares */
+.formulario {
+  display: none; }
+
+.contactanos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center; }
+
+.contact {
+  width: 100%; }
+
+.personaje {
+  grid-row: span 3; }
+
+/* mq de escritorio */
+@media screen and (min-width: 1024px) {
+  .contactanos {
+    display: none; }
+  .formulario {
+    display: block;
+    margin: 50px;
+    text-align: center;
+    background-image: url(../img/fondocelu.png);
+    font-size: 40px; }
+  .detalle-contacto {
+    color: #e60d0d; }
+    .detalle-contacto label {
+      padding: 0px 20px;
+      background-color: #c3eee0; } }
