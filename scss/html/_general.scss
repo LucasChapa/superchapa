@@ -79,11 +79,14 @@ footer {
     bottom: 0;
     right: 10px;
 
-    img{
+    img {
         width: 50px;
     }
 }
 
+/* mq de tablet */
+
+@media screen and (min-width:600px) {}
 
 /* mq de escritorio */
 

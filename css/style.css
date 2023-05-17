@@ -69,6 +69,7 @@ footer {
   .whatsapp img {
     width: 50px; }
 
+/* mq de tablet */
 /* mq de escritorio */
 @media screen and (min-width: 1024px) {
   .menu-celular {
@@ -154,16 +155,55 @@ footer {
     height: 100%;
     object-fit: cover; }
 
+.carrusel-panaderia {
+  display: none; }
+
 .contacto-aya {
-  text-align: center;
-  background-color: #3da7b9;
-  font-size: 25px; }
+  display: none; }
+
+.logo-aya-png {
+  display: flex; }
+  .logo-aya-png img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px; }
+
+.panadero {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 15px; }
+
+.panas1 {
+  grid-row: span 2; }
+  .panas1 img {
+    width: 100%; }
+
+.panas {
+  width: 100%; }
+
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  .carrusel-panaderia {
+    display: block; }
+  .logo-aya-png {
+    display: none; } }
 
 @media screen and (min-width: 1024px) {
   /* estilos para pc de panaderia */
   .panaderia-padre {
     display: grid; }
   .carrusel-panaderia {
+    display: none; }
+  .contacto-aya {
+    display: block;
+    text-align: center;
+    background-image: url(../img/fondo-panes.jpg);
+    font-size: 25px; }
+  .panadero {
     display: none; } }
 
 /* estilos para nuestros productos */
@@ -180,6 +220,9 @@ footer {
   .sectores img {
     width: 50%; }
 
+.elegir {
+  display: none; }
+
 .rubros {
   display: none; }
 
@@ -192,6 +235,21 @@ footer {
   .marcas-propias img {
     width: 100%;
     object-fit: cover; }
+
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  .sectores {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center; }
+    .sectores img {
+      width: 50%; }
+    .sectores .elegir {
+      width: 100%;
+      display: inline;
+      grid-row: span 3; } }
 
 @media screen and (min-width: 1024px) {
   .video-pc {
@@ -239,19 +297,33 @@ footer {
 
 /* estilos de pantallas de celulares */
 .formulario {
-  display: none; }
+  margin: 50px 5px;
+  text-align: center;
+  background-image: url(../img/fondocelu.png);
+  font-size: 40px; }
+
+.detalle-contacto {
+  color: #e60d0d; }
+  .detalle-contacto label {
+    padding: 0px 20px;
+    background-color: #c3eee0; }
 
 .contactanos {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  align-items: center; }
+  display: none; }
 
-.contact {
-  width: 100%; }
-
-.personaje {
-  grid-row: span 3; }
+/* mq de tablet */
+@media screen and (min-width: 600px) {
+  .formulario {
+    display: none; }
+  .contactanos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center; }
+  .contact {
+    width: 100%; }
+  .personaje {
+    grid-row: span 3; } }
 
 /* mq de escritorio */
 @media screen and (min-width: 1024px) {

@@ -4,47 +4,72 @@
 
 /* estilos de pantallas de celulares */
 
-.formulario{
+.formulario {
+    margin: 50px 5px;
+        text-align: center;
+        background-image: url(../img/fondocelu.png);
+        font-size: 40px;
+}
+.detalle-contacto {
+    color: rgb(230, 13, 13);
+
+    label {
+        padding: 0px 20px;
+        background-color: rgb(195, 238, 224);
+    }
+}
+.contactanos {
     display: none;
 }
 
-.contactanos{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    align-items: center;
+
+/* mq de tablet */
+
+@media screen and (min-width:600px) {
+
+    .formulario{
+        display: none;
+    }
+
+    .contactanos {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .personaje {
+        grid-row: span 3;
+    }
 }
 
-.contact{
-    width: 100%;
-}
-
-.personaje{
-    grid-row: span 3;
-}
 /* mq de escritorio */
 
 @media screen and (min-width:1024px) {
 
-.contactanos{
-    display: none;
-}
-
-.formulario {
-    display: block;
-    margin: 50px;
-    text-align: center;
-    background-image: url(../img/fondocelu.png);
-    font-size: 40px;
-}
-
-.detalle-contacto{
-    color: rgb(230, 13, 13);
-
-    label{
-        padding: 0px 20px;
-       background-color: rgb(195, 238, 224); 
+    .contactanos {
+        display: none;
     }
-    
-}
+
+    .formulario {
+        display: block;
+        margin: 50px;
+        text-align: center;
+        background-image: url(../img/fondocelu.png);
+        font-size: 40px;
+    }
+
+    .detalle-contacto {
+        color: rgb(230, 13, 13);
+
+        label {
+            padding: 0px 20px;
+            background-color: rgb(195, 238, 224);
+        }
+
+    }
 }

@@ -16,12 +16,57 @@
     }
 }
 
-.contacto-aya {
-    text-align: center;
-    background-color: rgb(61, 167, 185);
-    font-size: 25px;
+.carrusel-panaderia {
+    display: none;
 }
 
+.contacto-aya {
+    display: none;
+}
+
+.logo-aya-png {
+    display: flex;
+
+    img {
+        @include imagen;
+        padding: 10px;
+    }
+}
+
+.panadero {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+.panas1 {
+    grid-row: span 2;
+
+    img {
+        width: 100%;
+    }
+}
+
+.panas {
+    width: 100%;
+}
+
+/* mq de tablet */
+
+@media screen and (min-width:600px) {
+
+
+    .carrusel-panaderia {
+        display: block;
+    }
+
+    .logo-aya-png {
+        display: none;
+    }
+}
 
 // mq de escritorio 
 @media screen and (min-width: 1024px) {
@@ -34,4 +79,16 @@
     .carrusel-panaderia {
         display: none;
     }
+
+    .contacto-aya {
+        display: block;
+        text-align: center;
+        background-image: url(../img/fondo-panes.jpg);
+        font-size: 25px;
+    }
+
+    .panadero {
+        display: none;
+    }
+
 }

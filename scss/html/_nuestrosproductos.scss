@@ -9,16 +9,20 @@
     justify-content: center;
 }
 
-.sectores{
+.sectores {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
 
-    img{
+    img {
         width: 50%;
     }
+}
+
+.elegir{
+    display: none;
 }
 
 .rubros {
@@ -38,6 +42,31 @@
     }
 }
 
+/* mq de tablet */
+
+@media screen and (min-width:600px) {
+
+    
+    .sectores {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
+        align-items: center;
+    
+        img {
+        width: 50%;
+        }
+        
+        .elegir{
+        width: 100%;
+        display: inline;
+        grid-row: span 3;
+    }
+    }
+    
+}
+
 // mq de escritorio 
 @media screen and (min-width: 1024px) {
     .video-pc {
@@ -45,7 +74,7 @@
         justify-content: center;
     }
 
-    .sectores{
+    .sectores {
         display: none;
     }
 
